@@ -53,6 +53,23 @@ const stopVideo = () => {
   }
 }
 
+// "read more" funtion
+function readmore () {
+  var dots = document.getElementById('dots')
+  var moreText = document.getElementById('more')
+  var btnText = document.getElementById('readmore-btn')
+
+  if (dots.style.display === 'none') {
+    dots.style.display = 'inline'
+    btnText.innerHTML = 'Read more'
+    moreText.style.display = 'none'
+  } else {
+    dots.style.display = 'none'
+    btnText.innerHTML = 'Read less'
+    moreText.style.display = 'inline'
+  }
+}
+
 /// /// EVENT LISTENERS
 video.addEventListener('click', toggleVideoStatus)
 video.addEventListener('pause', updatePlayIcon)

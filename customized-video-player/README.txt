@@ -1,8 +1,11 @@
-** Customized music video using JS Video API  **
+## Custom Video Player
 
+Custom video player using the HTML5 video element and it's JavaScript API with a custom design. Responsive to screen size.
 
-** References for video slider **
+## Project Specifications
 
-	- https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
-	
-	- https://stackoverflow.com/questions/18389224/how-to-style-html5-range-input-to-have-different-color-before-and-after-slider
+- Display custom video player styled with CSS
+- Play, pause and stop features
+- Video progress bar
+- Set progress bar time
+- Display time in mins and seconds
