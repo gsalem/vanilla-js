@@ -7,15 +7,19 @@ const swap = document.getElementById('swap')
 
 // fetch exchange rate and update dom
 const calculate = () => {
-  const currency_1 = currency1.value
-  const currency_2 = currency2.value
+  let currency_1 = currency1.value
+  const amount_1 = +amount1.value
+  let currency_2 = currency2.value
+  const amount_2 = +amount2.value
 
   fetch(`https://api.exchangerate-api.com/v4/latest/${currency_1}`)
     .then(res => res.json())
     .then(data => {
-      // console.log(data);
+      let keys = Object.keys(data.rates)
       const rate = data.rates[currency_2]
+
       rate_element.innerText = `1 ${currency_1} = ${rate} ${currency_2}`
+
       amount2.value = amount1.value * rate
     })
 }
