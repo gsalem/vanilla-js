@@ -1,0 +1,113 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
+	 crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Landing Page</title>
+</head>
+
+<body>
+	<nav>
+		<img class="logo" src="logo.jpg" alt="">
+		<ul>
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">Portfolio</a>
+			</li>
+			<li>
+				<a href="#">Blog</a>
+			</li>
+			<li>
+				<a href="#">Contact me</a>
+			</li>
+		</ul>
+	</nav>
+
+	<header>
+		<button type="button" class="toggle" id="toggle">
+			<i class="fa fa-bars fa-2x"></i>
+		</button>
+
+		<h1>The Landing Page</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero</p>
+
+		<button type="button" class="cta-btn" id="open">Sign up</button>
+	</header>
+
+	<main class="container">
+		<h2>About</h2>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, totam consectetur? Perspiciatis consequuntur ad praesentium
+			illum mollitia corrupti aliquid eaque exercitationem ipsa nam quam sed aliquam ea quisquam unde ab ullam, pariatur enim
+			dicta amet?</p>
+
+		<h2>Tell me more</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolore perspiciatis voluptas aperiam tempore ipsam
+			harum voluptates. Ipsum vitae, laborum atque temporibus, perspiciatis placeat amet, officiis assumenda dolores expedita
+			doloremque. In, dolore! Sit enim dolorum fugiat sequi quae earum minima.</p>
+
+		<h2>Benefits</h2>
+		<ul>
+			<li>Lifetime Access</li>
+			<li>30 Day money back</li>
+			<li>Tailored Customer Support</li>
+		</ul>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, nam sequi eos necessitatibus nobis sed?Lorem ipsum dolor
+			sit amet consectetur adipisicing elit. Quibusdam ipsam officiis maiores asperiores laboriosam facilis vel. Vel atque voluptates
+			temporibus!
+		</p>
+	</main>
+
+
+	<!-- MODAL -->
+	<div class="modal-container" id="modal">
+		<div class="modal">
+			<button class="close-btn" id="close">
+				<i class="fa fa-times"></i>
+			</button>
+			<div class="modal-header">
+				<h3>Sign Up</h3>
+			</div>
+			<div class="modal-content">
+				<p>register with us to get offers</p>
+				<form class="modal-form">
+
+					<div>
+						<label for="name">Name</label>
+						<input type="text" id="name" placeholder="Enter Name">
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input type="text" id="email" placeholder="Enter Email">
+					</div>
+					<div>
+						<label for="password">Password</label>
+						<input type="text" id="password" placeholder="Enter Password">
+					</div>
+					<div>
+						<label for="confirm-password">Confirm Password</label>
+						<input type="text" id="confirm-password" placeholder="Confirm Password">
+					</div>
+					<input type="submit" value="submit" class="submit-btn">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<h2>Contact</h2>
+		<ul>
+			<li>email</li>
+			<li>phone</li>
+			<li>linkedin</li>
+		</ul>
+	</footer>
+	<script src="main.js"></script>
+</body>
+
+</html>
